@@ -1,4 +1,4 @@
-# FirstBundleBundle
+# FirstTestBundle
 An example repository for creating php symfony flex bundles
 
 hoi
@@ -25,7 +25,7 @@ To create your own symfony bundle. You can copy this repository for a fast start
 4. Press the green button `Create repository from template`
 5. Update file names and namespace to your fitting 
    - Open composer.json, and change the name to your fitting. The first word should be the namespace and the second the name of your bundle. Check the autoload field to be set accordingly. Note: this is kebab-case. Also read: [naming your package](https://packagist.org/about#naming-your-package)
-   - Open FirstBundleBundle.php and change the Bundle name and namespace. The namespace should be the same as your package name in composer.json but in CamelCase. So common-gateway/pet-store-bundle becomes NovaEBA/firsttestbundle
+   - Open FirstTestBundle.php and change the Bundle name and namespace. The namespace should be the same as your package name in composer.json but in CamelCase. So common-gateway/pet-store-bundle becomes NovaEBA/firsttestbundle
    - Rename the /Service and /ActionHandler accordingly (or delete if not used).
    - Rename the /DependencyInjection/FirstBundleExtension.php to your BundleNameExtension.php
    - Rename the /Resources/config/services.xml service and handler to your new namespace and BundleName  
@@ -61,7 +61,7 @@ Note: for docker add `docker-compose exec php` before all comands
    - Execute `composer require {full package name}:dev-main`
    - Docker users: restart your containers so symfony can recognize the new Bundle's namespace
 2. Open a php file where you want to use a class.
-   - Add the correct use statement (example `use CommonGateway\FirstBundleBundle\Service\FirstBundleService;`)
+   - Add the correct use statement (example `use CommonGateway\FirstTestBundle\Service\FirstBundleService;`)
    - U can now use your class!
 
-In the common gateway, if you want to use your code when triggered by an event with a action, make sure the class of the action object is set as the handler name including the namespace. For example if I want to use the FirstBundleService I can set the FirstBundleHandler as `CommonGateway\FirstBundleBundle\ActionHandler\FirstBundleHandler`.
+In the common gateway, if you want to use your code when triggered by an event with a action, make sure the class of the action object is set as the handler name including the namespace. For example if I want to use the FirstBundleService I can set the FirstBundleHandler as `CommonGateway\FirstTestBundle\ActionHandler\FirstBundleHandler`.

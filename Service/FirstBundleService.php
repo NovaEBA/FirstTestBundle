@@ -14,6 +14,6 @@ class FirstBundleService
      */
     public function firstBundleHandler(array $data, array $configuration): array
     {
-        return ['response' => 'Hello. Your FirstBundleBundle works'];
+        return ['response' => 'Hello. Your FirstTestBundle works'];
     }
 }
