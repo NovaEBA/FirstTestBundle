@@ -1,16 +1,16 @@
 <?php
 
-namespace CommonGateway\PetStoreBundle\ActionHandler;
+namespace NovaEBA\FirstTestBundle\ActionHandler;
 
-use CommonGateway\PetStoreBundle\Service\PetStoreService;
+use NovaEBA\FirstTestBundle\Service\FirstBundleService;
 
-class PetStoreHandler
+class FirstBundleHandler
 {
-    private PetStoreService $petStoreService;
+    private FirstBundleService $firstBundleService;
 
-    public function __construct(PetStoreService $petStoreService)
+    public function __construct(FirstBundleService $firstBundleService)
     {
-        $this->petStoreService = $petStoreService;
+        $this->firstBundleService = $firstBundleService;
     }
 
     /**
@@ -23,7 +23,7 @@ class PetStoreHandler
         return [
             '$id'         => 'https://example.com/person.schema.json',
             '$schema'     => 'https://json-schema.org/draft/2020-12/schema',
-            'title'       => 'PetStore Action',
+            'title'       => 'FirstBundle Action',
             'description' => 'This handler returns a welcoming string',
             'required'    => [],
             'properties'  => [],
@@ -45,6 +45,6 @@ class PetStoreHandler
      */
     public function run(array $data, array $configuration): array
     {
-        return $this->petStoreService->petStoreHandler($data, $configuration);
+        return $this->firstBundleService->firstBundleHandler($data, $configuration);
     }
 }

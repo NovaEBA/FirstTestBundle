@@ -1,6 +1,6 @@
 publiccodeYmlVersion: "0.1"
-name: "firsttestbundle"
-url: "https://github.com/NovaEBA/firsttestbundle"
+name: "FirstTestBundle"
+url: "https://github.com/NovaEBA/FirstTestBundle"
 releaseDate: "2022-10-01"
 softwareType: addon
 
@@ -14,6 +14,6 @@ categories:
 developmentStatus: beta
 description:
   nl:
-    shortDescription: "firsttestbundle"
+    shortDescription: "FirstTestBundle"
   en:
-    shortDescription: "firsttestbundle"
+    shortDescription: "FirstTestBundle"
