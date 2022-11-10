@@ -1,6 +1,7 @@
 # FirstBundleBundle
 An example repository for creating php symfony flex bundles
 
+hoi
 
 ### Using this bundle
 U can install this plugin by installing with command:
